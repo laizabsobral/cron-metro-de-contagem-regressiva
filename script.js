@@ -11,7 +11,7 @@ function contador () {
     const anoNovoDate = new Date(anoNovo);
     const currentDate = new Date();
 
-    const totalSegundos =(anoNovoDate - currentDate) * 1000;
+    const totalSegundos =(anoNovoDate - currentDate) / 1000;
 
     const dias = Math.floor(totalSegundos / 3600 / 24);
     const horas = Math.floor(totalSegundos/ 3600) % 24;
@@ -27,4 +27,4 @@ function contador () {
 
 contador();
 
-setInterval(contador,1000);
+setInterval(contador, 1000);
